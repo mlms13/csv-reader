@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# Node.js
+npm-debug.log
+/node_modules/
+
+# OCaml/BuckleScript/ReasonML
+.merlin
+.bsb.lock
+/lib/bs/
+*.bs.js
+
+# Parcel
+/.cache/
+dist/
+
+
+# Git
+*.orig
+
+# Generated project files
+/coverage

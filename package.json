@@ -1,0 +1,27 @@
+{
+  "name": "csv-reader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "bsb -clean-world",
+    "build": "bsb -make-world",
+    "dev": "parcel index.html",
+    "start": "parcel build index.html"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "bs-platform": "^6.0.3",
+    "bsb-js": "^1.1.7",
+    "parcel-bundler": "^1.12.3"
+  },
+  "dependencies": {
+    "bs-abstract": "^0.17.0",
+    "bs-webapi": "^0.15.4",
+    "reason-react": "^0.7.0",
+    "relude": "^0.27.0",
+    "relude-csv": "^0.2.0",
+    "relude-parse": "^0.7.0"
+  }
+}
