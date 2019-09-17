@@ -75,6 +75,11 @@ let make: type a. props(a) => React.element =
       triggerChangeFromFiles(files);
     };
 
+    let onDragOver = evt => {
+      ReactEvent.Mouse.preventDefault(evt);
+      Js.log("Drag enter!");
+    };
+
     let onDrop = evt => {
       Js.log("On drop, looking for files");
       ReactEvent.Mouse.stopPropagation(evt);
@@ -92,7 +97,7 @@ let make: type a. props(a) => React.element =
       | CSV => ".csv"
       };
 
-    <label className="file-picker" onDrop>
+    <label className="file-picker" onDrop onDragOver>
       <span> {React.string(label)} </span>
       <input type_="file" onChange accept />
     </label>;
