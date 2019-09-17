@@ -7,14 +7,20 @@
     "clean": "bsb -clean-world",
     "build": "bsb -make-world",
     "dev": "parcel index.html",
-    "start": "parcel build index.html"
+    "start": "parcel build index.html",
+    "prod:bundle": "rollup --config rollup.config.js && terser dist/bundle.js -m -o dist/bundle.js"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "bs-platform": "^6.0.3",
     "bsb-js": "^1.1.7",
-    "parcel-bundler": "^1.12.3"
+    "parcel-bundler": "^1.12.3",
+    "rollup": "^1.21.4",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-replace": "^2.2.0",
+    "terser": "^4.3.1"
   },
   "dependencies": {
     "bs-abstract": "^0.17.0",
