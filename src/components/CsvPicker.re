@@ -11,7 +11,7 @@ let make = () => {
       transform=FileInput.CSV
       onChange={const >> setFile}
     />
-  | Some(FileData.{name, data, _}) =>
+  | Some({FileData.name, data, _}) =>
     <div> <h1> {React.string(name)} </h1> <CsvTable data /> </div>
   };
 };

@@ -44,9 +44,11 @@ const reactPlugins = [
 export default {
   input: 'src/App.bs.js',
   output: {
-    file: 'dist/bundle.js',
     name: "bundle",
     format: 'iife'
   },
-  plugins: reactPlugins
+  plugins: reactPlugins,
+  treeshake: {
+    moduleSideEffects: false
+  }
 };

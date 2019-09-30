@@ -8,12 +8,12 @@
     "build": "bsb -make-world",
     "dev": "parcel index.html",
     "start": "parcel build index.html",
-    "prod:bundle": "rollup --config rollup.config.js && terser dist/bundle.js -m -o dist/bundle.js"
+    "prod:bundle": "rollup --config rollup.config.js | terser -m -o dist/bundle.min.js"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "bs-platform": "^6.0.3",
+    "bs-platform": "^5.2.0",
     "bsb-js": "^1.1.7",
     "parcel-bundler": "^1.12.3",
     "rollup": "^1.21.4",
